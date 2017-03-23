@@ -21,14 +21,14 @@ component  accessors = true  extends = "BaseDataProcessor" {
 		var paramStruct = {};
 		switch(type) {
 		    case "master":
-		    	  paramStruct["url"] =  "http://local.website/games/" & row.yearid & "_" & row.monthid & "_" & row.dayid & "/score.xml" ;
+		    	paramStruct["url"] =  "http://local.website/games/" & row.yearid & "_" & row.monthid & "_" & row.dayid & "/score.xml" ;
 		        paramStruct["directory"] = "C:\scores\";
 		        paramStruct["filename"] = row.gameid & ".xml" ;
 
 		        break;
 
  		    case "player":
-		    	  paramStruct["url"] =  "http://local.website/players/" & row.yearid & "_" & row.monthid & "_" & row.dayid & "/player.json" ;
+		    	paramStruct["url"] =  "http://local.website/players/" & row.yearid & "_" & row.monthid & "_" & row.dayid & "/player.json" ;
 		        paramStruct["directory"] = "C:\players\";
 		        paramStruct["filename"] = row.playerID & ".json" ;
 
